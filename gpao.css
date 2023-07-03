@@ -1,0 +1,310 @@
+.sidebar-dark .sidebar-brand{
+	/*color: #777777;
+	text-shadow: 1.5px 1.5px 3px grey;
+	background-color: white;*/
+}
+
+.sidebar .nav-item .collapse, .sidebar .nav-item .collapsing{
+	margin: 0;
+}
+
+.sidebar-dark .sidebar-heading{
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: underline;
+	font-size: 1rem;
+}
+@media (min-width: 768px){
+	.sidebar.toggled .nav-item .collapse .level3-min{
+		left: calc(6.5rem + 2.75rem) !important;
+	}
+	.sidebar.toggled .nav-item .collapse .level3-min > li > a{
+		margin-left: 0.25rem !important;
+	}
+	.sidebar.toggled .nav-item .collapse .level3-min > .sidebar-heading{
+		margin-left: 0.25rem !important;
+	}
+}
+
+.sidebar .nav-item:last-child {
+  margin-bottom: 0.75rem;
+}
+
+.sidebar hr.sidebar-divider {
+  margin: 0 1rem 0rem;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    width: 15rem !important;
+  }
+  .sidebar .nav-item .nav-link {
+    padding: 0.5rem 0.75rem;
+  }
+  .sidebar .nav-item .nav-link i {
+    font-size: 1.15rem;
+  }
+  .sidebar .nav-item .nav-link span {
+    font-size: 1.15rem;
+  }
+}
+
+.sidebar-dark .nav-item .nav-link i {
+  color: rgba(255, 255, 255, 0.5);
+}
+.sidebar-dark .nav-item.active .nav-link {
+  color: rgba(255,255,255,.8);
+}
+.sidebar-dark .nav-item.active .nav-link:hover {
+    color: #fff;
+}
+
+.sidebar-dark .nav-item.active .nav-link.active {
+  color: #fff;
+}
+
+.topbar.navbar-light .navbar-nav .nav-item.active .nav-link.active{
+	color: #858796 !important;
+}
+
+.dt-buttons, .dataTables_length{
+    float: left;
+    margin-left: 1rem;
+}
+
+.dataTables_filter{
+    float: right;
+}
+
+.zc-rel{
+    position: relative!important;
+}
+
+.border-select{
+    border: 1px solid #d1d3e2;
+}
+
+.bootstrap-select > div > div > ul > li.dropdown-header {
+    padding: 0;
+}
+
+.input-group-user{
+	border-radius: 10rem 0 0 10rem !important;
+}
+
+.select-user{
+	border-radius: 0 10rem 10rem 0 !important;
+}
+
+.border-info:focus{
+	box-shadow: 0 0 0 0.2rem rgba(54,185,204,.25);
+}
+
+/* JN pour personnalisation bootstrat switches style windows */
+.onoffswitch
+{
+    position: relative;
+	width: 70px;
+    -webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select: none;
+}
+
+.onoffswitch-checkbox
+{
+    display: none;
+}
+
+.onoffswitch-label
+{
+    display: block;
+	overflow: hidden;
+	cursor: pointer;
+    border: 2px solid #CCCCCC;
+	border-radius: 0px;
+}
+
+.onoffswitch-inner
+{
+    display: block;
+	width: 200%;
+	margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s;
+	-webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s;
+	transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after
+{
+    display: block;
+	float: left;
+	width: 50%;
+	height: 25px;
+	padding: 0;
+	line-height: 20px;
+    font-size: 14px;
+	color: white;
+	font-family: Trebuchet, Arial, sans-serif;
+	font-weight: bold;
+    -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+.onoffswitch-inner:before
+{
+    content: "Oui";
+    padding-left: 10px;
+    background-color: #05C70B;
+	color: #000000;
+}
+
+.onoffswitch-inner:after
+{
+    content: "Non";
+    padding-right: 10px;
+    background-color: #e57061; /* #C00707;*/
+	color: #000000;
+    text-align: right;
+}
+
+.onoffswitch-switch
+{
+    display: block;
+	width: 15px;
+	margin: 0px;
+    background: #000000;
+    position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 55px;
+    -moz-transition: all 0.3s ease-in 0s;
+	-webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s;
+	transition: all 0.3s ease-in 0s; 
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner
+{
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch
+{
+    right: 0px; 
+}
+/* fin bootstrap switches */
+/*JN wired switch bootstrap */
+/* Basic Rules */
+.switch_wired input
+{ 
+    display:none;
+}
+.switch_wired
+{
+    display:inline-block;
+    width:60px;
+    height:30px;
+    margin:8px;
+    transform:translateY(50%);
+    position:relative;
+}
+/* Style Wired */
+.slider_wired
+{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    border-radius:30px;
+    box-shadow:0 0 0 2px #E30003, 0 0 4px #E30003;
+    cursor:pointer;
+    border:4px solid transparent;
+    overflow:hidden;
+    transition:.4s;
+}
+.slider_wired:before
+{
+    position:absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    background: #E30003;
+    border-radius:30px;
+    transform:translateX(-30px);
+    transition:.4s;
+}
+
+input:checked + .slider_wired:before
+{
+    transform:translateX(30px);
+    background:limeGreen;
+}
+input:checked + .slider_wired
+{
+    box-shadow:0 0 0 2px limeGreen,0 0 2px limeGreen;
+}
+/*fin*/
+.ui-autocomplete {
+  position: absolute;
+  z-index: 99999 !important;
+  cursor: default;
+  padding: 0;
+  margin-top: 2px;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #ccc -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ui-autocomplete>li {
+  padding: 3px 20px;
+}
+
+.ui-helper-hidden-accessible {
+  display: none;
+}
+
+.neo{
+    font-weight: 300;
+}
+
+table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after{
+    position: inherit !important;
+    float: right !important;
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
+.dt-buttons, .dataTables_length{
+    float: left;
+    margin-left: 1rem;
+}
+
+.dataTables_filter{
+    float: right;
+}
+
+.dataTables_info{
+    float: left;
+}
+
+.error{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    background-color: #a81313;
+    padding: 1rem;
+    border-radius: 10px;
+    font-family: Bahnschrift, serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}

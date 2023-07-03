@@ -1,0 +1,31 @@
+#accordionSidebar{
+    display: none !important;
+}
+
+#selection-entete{
+    display: none !important;
+}
+
+#rapports-visite{
+    display: none !important;
+}
+
+#historique{
+    display: none !important;
+}
+
+.dt-buttons{
+    display: none !important;
+}
+
+.dataTables_filter{
+    display: none !important;
+}
+
+.dataTables_info{
+    display: none !important;
+}
+
+.noprint{
+    display: none !important;
+}
